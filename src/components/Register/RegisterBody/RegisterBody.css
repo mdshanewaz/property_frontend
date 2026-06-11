@@ -1,0 +1,82 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container .from_container {
+    width: 60%;
+    margin: auto;
+    padding: 40px 40px;
+    background: #fff;
+    transform: translateY(-40%);
+    margin-top: 80px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 255, 0.3);
+    border-radius: 5px;
+}
+
+.container .from_container .from_avatar_container {
+    padding-bottom: 30px;
+}
+
+.container .from_container .from_avatar_container .register_avatar {
+    font-size: 6rem;
+    margin: auto;
+    color: var(--theme-color)
+}
+
+.container .from_container .from_avatar_container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--bg-color-1);
+}
+
+.container .from_container .register_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .from_container .register_form input {
+    width: 80%;
+    outline: 1px solid #b9b9b9;
+    border-radius: 2px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.container .from_container .register_form p {
+    text-align: center;
+}
+
+.container .from_container .register_form button {
+    background-color: var(--bg-color-1);
+    width: 80%;
+    color: #fff;
+    padding: 10px 0;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.container .from_container .login_account {
+    text-align: center;
+}
+
+.container .from_container .login_account  a {
+    font-weight: bold;
+    color: var(--bg-color-1);
+}
+
+@media (max-width: 768px) {
+    .container .from_container {
+        width: 100%;
+        transform: translateY(-30%);
+    }
+
+    .container .from_container .register_form input {
+        width: 100%;
+    }
+
+    .container .from_container .register_form button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.contain {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.contain .profile_menu {
+    width: 15%;
+    background: #00052c;
+    display: block;
+    padding-top: 10%;
+    color: #fff;
+}
+
+.contain .profile_content {
+    width: 85%;
+    display: block;
+}

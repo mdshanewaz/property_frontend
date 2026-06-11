@@ -1,0 +1,28 @@
+
+.profile_nav .profile_user {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.profile_nav ul li a {
+    padding: 15px 0px 8px 30px;
+    border-bottom: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+}
+
+.profile_nav ul li .nav_link_icon {
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.profile_nav .profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}

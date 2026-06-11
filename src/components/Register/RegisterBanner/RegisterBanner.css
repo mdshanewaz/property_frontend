@@ -1,0 +1,47 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.register_banner {
+    width: 100%;
+    height: 80vh;       
+    /* background-image: url('../../../assets/register.jpg'); */
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.register_banner .container {
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register_banner .container .register_banner-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.register_banner .container .register_banner-content h2 {
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+.register_banner .container .register_banner-content p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .register_banner .container .register_banner-content h2 {
+        font-size: 2rem;
+    }   
+}

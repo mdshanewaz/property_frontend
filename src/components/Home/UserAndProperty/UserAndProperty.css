@@ -1,0 +1,69 @@
+section .container {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+section .container .buyers, section .container .sellers {
+    width: 49%;
+    height: 40vh;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+section .container .buyers .under_line, section .container .sellers .under_line {
+    width: 50%;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    margin-bottom: 20px;
+}
+
+section .container .buyers { 
+    background-image: url('../../../assets/buyer_key.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section .container .sellers { 
+    background-image: url('../../../assets/seller_key.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+section .container .buyers h2, section .container .sellers h2 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+section .container .buyers h3, section .container .sellers h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+section .container .buyers p, section .container .sellers p {
+    margin-bottom: 20px;
+}
+
+section .container .buyers button, section .container .sellers button {
+    background: #001763;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+section .container .buyers button:hover, section .container .sellers button:hover {
+    background: #b87700;
+}
+
+@media (max-width: 768px) {
+    section .container {
+        display: block;
+    }
+    section .container .buyers, section .container .sellers {
+        width: 100%;
+        margin-bottom: 20px;
+    }   
+}

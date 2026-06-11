@@ -1,0 +1,28 @@
+.container .pop-up {
+    width: 80%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 255, 0.3);
+    text-align: center;
+    border-radius: 5px;
+    padding: 60px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 500ms;
+    position: absolute;
+    transform: translate(-50%, -60%);
+    justify-content: center;
+    align-items: center;
+}
+
+.container .pop-up .close_button {
+    background: red;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0px 20px;
+    border-radius: 3px;
+}

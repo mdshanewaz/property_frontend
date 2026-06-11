@@ -1,0 +1,134 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.banner {
+    width: 100%;
+    height: 80vh;       
+    background-image: url('../../../assets/home_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.banner .container {
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner .container .banner-content {
+    width: 100%;
+    height: auto;
+}
+
+.banner .container .banner-content h2 {
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+.banner .container .banner-content p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.banner .container .banner-content form {
+    background-color: #fff;
+    padding: 15px 0px 15px 15px;
+    width: 80%;
+    border-radius: 3px;
+}
+
+.banner .container .banner-content form input, .banner .container .banner-content form select {
+    outline: 1px solid #5c5b5b;
+    border-radius: 2px;
+    margin-right: 15px;
+    padding: 5px;
+    width: 20%;
+}
+
+.banner .container .banner-content form button {
+    background: #001763;
+    color: #fff;
+    padding: 7px 30px 7px 30px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.banner .container .banner-content form button:hover {
+    background: #264fd3;
+}
+
+.container .buy-sell-properties {
+    display: flex;
+    padding: 30px 0px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-30%);
+    background: #fff;
+}
+
+.container .buy-sell-properties .icon-container {
+    width: 33%;
+    text-align: center;
+}
+
+.container .buy-sell-properties .icon-container .icons {
+    font-size: 4rem;
+    color: #001763;
+}
+
+.container .buy-sell-properties .icon-container h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #001763;
+}
+
+.container .buy-sell-properties .vertical-line { 
+    border: 1px solid #d4d4d4;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .banner .container {
+        padding-top: 30%;
+    }
+
+    .banner .container .banner-content h2 {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    .banner .container .banner-content form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .banner .container .banner-content form input, .banner .container .banner-content form select {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .container .buy-sell-properties {
+        transform: translateY(0);
+        display: block;
+        margin-top: 60px;
+    }
+
+    .container .buy-sell-properties .icon-container {
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+}

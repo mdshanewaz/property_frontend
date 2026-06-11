@@ -1,0 +1,107 @@
+.navbar {
+    background: #000;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .ham-burger {
+    color: #b87700;
+    display: none;
+}
+
+.navbar .container .navbar-brand {
+    width: 22%;
+    margin: 15px 10px 15px 0;
+}
+
+.navbar .container .navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container .navbar-menu li {
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+
+.navbar .container .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .container .navbar-menu li .nav-btn {
+    border: 1px solid #7e7e7e;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar .container .navbar-menu li .nav-btn a {
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .container .navbar-menu li a.active {
+    color: #b87700;
+    text-decoration: underline;
+}
+
+.navbar .container .navbar-menu li .nav-btn a.active{
+    text-decoration: none;
+}
+
+.navbar .container .navbar-menu li .nav-btn:hover {
+    background: #fff;
+}
+
+.navbar .container .navbar-menu li .nav-btn:hover a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar .container .navbar-menu li a:hover {
+    color: #b87700;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar .container .navbar-menu{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.4s ease-in-out;
+        top: 60px;
+        padding: 20px 0px;
+        width: 75%;
+        height: auto;
+        right: 0;
+        background: #000;
+        z-index: 100;
+    }
+
+    .navbar .container .navbar-menu li {
+        margin-top: 15px;
+    }
+
+    .navbar .container .navbar-menu.active {
+        display: block;
+        transform: translateX(0);
+    }
+
+    .navbar .container .ham-burger {
+        display: block;
+    }
+}
