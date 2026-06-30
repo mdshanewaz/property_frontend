@@ -35,7 +35,6 @@ export const LoginBody = () => {
 
             if (response.data.login == true) { 
 
-                login();
 
                 setPopup({
                     show: true,
@@ -47,8 +46,9 @@ export const LoginBody = () => {
                 setPassword("")
 
                 setTimeout(() => {
+                    login();
                     navigate('/', {replace:true});
-                }, 5000)
+                }, 3000)
                 
             }
         }

@@ -15,9 +15,9 @@ export const AuthContextProvider = ({ children }) => {
         // if (authenticated) return;
         try{
             const success = await IsAuthenticated();
-            console.log("Authentication result:", success);
+            // console.log("Authentication result:", success);
             setIsAuthenticated(success);
-            console.log('Authenticated state',authenticated);
+            // console.log('Authenticated state',authenticated);
         } 
         catch(error){
             // console.log(error);
@@ -41,7 +41,7 @@ export const AuthContextProvider = ({ children }) => {
     useEffect(() =>{
         // console.log("isAuthenticated changed:", isAuthenticated);
         get_authenticated();
-        console.log("isAuthenticated changed:", authenticated);
+        // console.log("isAuthenticated changed:", authenticated);
     }, [location.pathname, get_authenticated().success, authenticated]);
 
     return (

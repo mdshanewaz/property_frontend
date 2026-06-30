@@ -49,7 +49,7 @@ export const ProfileNav = () => {
                 { userProfile? (
                   <>
                     <img src={ ImageURL(userProfile.photo) } alt="Profile Picture" className="profile_img" />
-                    <h2 className="profile_user">Welcome { userProfile.owner }!</h2>
+                    <h2 className="profile_user">Welcome { userProfile.username }!</h2>
                   </>
               )
               : (
@@ -57,15 +57,15 @@ export const ProfileNav = () => {
               )}
               <nav>
                 <ul>
-                  <li><Link to='assets'><TbBuildingEstate className="nav_link_icon" /> Assets</Link></li>
-                  <li><Link to='rents'><TbBuildingEstate className="nav_link_icon" /> Rents</Link></li>
-                  <li><Link to='inbox'><FaRocketchat className="nav_link_icon" /> Inbox</Link></li>
-                  <li><Link to='notification'>< FaRegBell className="nav_link_icon" /> Notification</Link></li>
-                  <li><Link to='addasset'><MdAddHomeWork className="nav_link_icon" /> Add Asset</Link></li>
-                  <li><Link to='giverent'><MdGroupAdd className="nav_link_icon" /> Give Rent</Link></li>
-                  <li><Link to='about'><CgProfile className="nav_link_icon" /> About</Link></li>
-                  <li><Link to='edit'><ImProfile className="nav_link_icon" /> Edit Profile</Link></li>
-                  <li><Link to='logout'><IoMdLogOut className="nav_link_icon" /> Logout</Link></li>
+                  <li><NavLink to='assets'><TbBuildingEstate className="nav_link_icon" /> Assets</NavLink></li>
+                  <li><NavLink to='rents'><TbBuildingEstate className="nav_link_icon" /> Rents</NavLink></li>
+                  <li><NavLink to='inbox'><FaRocketchat className="nav_link_icon" /> Inbox</NavLink></li>
+                  <li><NavLink to='notification'>< FaRegBell className="nav_link_icon" /> Notification</NavLink></li>
+                  <li><NavLink to='addasset'><MdAddHomeWork className="nav_link_icon" /> Add Asset</NavLink></li>
+                  <li><NavLink to='giverent'><MdGroupAdd className="nav_link_icon" /> Give Rent</NavLink></li>
+                  <li><NavLink to='about'><CgProfile className="nav_link_icon" /> About</NavLink></li>
+                  <li><NavLink to='edit'><ImProfile className="nav_link_icon" /> Edit Profile</NavLink></li>
+                  <li><NavLink to='logout'><IoMdLogOut className="nav_link_icon" /> Logout</NavLink></li>
                 </ul>
               </nav>    
             </aside>

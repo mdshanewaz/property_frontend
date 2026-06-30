@@ -1,3 +1,4 @@
+import "./AddAssetPage.css";
 import { Title } from "../../components/Title/Title";
 
 export const AddAssetPage = () => {
@@ -5,18 +6,6 @@ export const AddAssetPage = () => {
     
     return (
         <>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <h2>Add New Asset</h2>
         </>
     );

@@ -27,15 +27,20 @@ import { NoMatchPage } from './Pages/NoMatchPage/NoMatchPage';
 import { ProfileAssetesPage } from './Pages/ProfileAssetesPage/ProfileAssetesPage';
 import { ProfileRentsPage } from './Pages/ProfileRentsPage/ProfileRentsPage';
 import { ProfileInboxPage } from './Pages/ProfileInboxPage/ProfileInboxPage';
+import { AddAssetPage } from './Pages/AddAssetPage/AddAssetPage';
 
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
+import { PropertyDetails } from './Pages/PropertyDetails/PropertyDetails';
 
 function App() {
   return (
     <>
       <Nav />
       <Routes>
+
+        {/* <Route path='/test' element={< Featured />} /> */}
+
         <Route path='/' element={< Home />} />
         <Route path='/about' element={< About />} />
         <Route path='/buy' element={< Buy />} />
@@ -58,9 +63,12 @@ function App() {
           <Route path='assets' element={<ProfileAssetesPage/>} />
           <Route path='rents' element={<ProfileRentsPage/>} />
           <Route path='inbox' element={<ProfileInboxPage/>} />
+          <Route path='addasset' element={<AddAssetPage/>} />
           <Route path='logout' element={<Logout/>} />
         </Route>
         
+
+        <Route path='/property/:id' element={<PrivateRoute><PropertyDetails /></PrivateRoute>} />
 
         <Route path='/flat' element={< GetAppartment />} />
 

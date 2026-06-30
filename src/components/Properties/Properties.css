@@ -1,0 +1,30 @@
+.property_card {
+    width: 22%;
+    border-radius: 5px;
+    border: 1px solid rgba(214, 214, 214, 0.533);
+    margin: 20px 10px;
+}
+
+.property_card .property_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property_card .property_card_body {
+    padding: 5px 10px 5px 10px;
+}
+
+.property_card .property_card_body h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.property_card .property_card_body h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.property_card .property_card_body p {
+    font-size: 0.8rem;
+}

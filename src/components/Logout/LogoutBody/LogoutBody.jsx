@@ -36,18 +36,8 @@ export const LogoutBody = () => {
 
     return (
         <>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
             <h2>Are you sure about loging out?</h2>
             <button onClick={handleLogout}>Logout</button>
-        <br />
-        <br />
-        <br />
-        <br />
         </>
     );
 }

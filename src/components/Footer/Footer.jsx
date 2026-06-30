@@ -1,6 +1,6 @@
 import "./Footer.css";
 import { Link, NavLink } from "react-router-dom";
-import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
 
 export const Footer = () => {
@@ -30,6 +30,7 @@ export const Footer = () => {
                             <h3>You can easily find us on modern social medias also.</h3>
                             <div className="footer_top_icons">
                                 <Link><FaFacebookF /></Link>
+                                <Link><FaInstagram /></Link>
                                 <Link><FaLinkedinIn /></Link>
                                 <Link><FaYoutube /></Link>
                             </div>

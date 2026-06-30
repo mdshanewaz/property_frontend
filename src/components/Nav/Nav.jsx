@@ -9,7 +9,7 @@ import { AuthContextProvider, useAuthContext } from "../../context/Auth/AuthProv
 
 export const Nav = () => {
     const [menuOpen, setMenu] = useState(false);
-    const { authenticated, isLoading }  = useAuthContext();
+    const { authenticated, isLoading, logout, login }  = useAuthContext();
 
     const toggleMenu = () => {
         setMenu(prev => !prev);
@@ -19,7 +19,7 @@ export const Nav = () => {
         setMenu(false);
     }
 
-    console.log("Nav:", authenticated, isLoading);
+    // console.log("Nav:", authenticated, isLoading);
 
     // setInterval(() => {
     //     console.log("Nav:", authenticated );

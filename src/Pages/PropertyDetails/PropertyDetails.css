@@ -1,0 +1,37 @@
+.container .property_title {
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+}
+
+.container .property_title h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.container .property_body {
+    width: 100%;
+    display: flex;
+}
+
+.container .property_body .property_body_left {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.container .property_body .property_body_left img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container .property_body .property_body_right {
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    padding: 10px 0px 0px 10px;
+}
+
+.container .property_body .property_body_right h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}

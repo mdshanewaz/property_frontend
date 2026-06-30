@@ -2,3 +2,38 @@
     width: 90%;
     margin: auto;
 }
+
+.container .feature_top, .container .featured_body {
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.container .feature_top .featured_heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 50%;
+}
+
+.container .feature_top .featured_button {
+    width: 50%;
+    text-align: right;
+}
+
+.container .feature_top .featured_button a {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #001763;
+    font-weight: 500;
+}
+
+.container .feature_top .featured_button a:hover {
+    color: #fff;
+    background: #001763;
+}
+/* 
+.container .featured_body {
+    
+} */

@@ -26,3 +26,17 @@
     border-radius: 50%;
     margin: auto;
 }
+
+.profile_nav nav ul li a.active {
+    color: #b87700;
+    text-decoration: underline;
+}
+
+.profile_nav nav ul li a:hover {
+    color: #b87700;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    
+}
