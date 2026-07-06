@@ -1,8 +1,10 @@
 import './PropertyDetails.css'
 import React, { useEffect, useState } from 'react';
 import Api from '../../api/Api';
-import { data, useParams } from 'react-router-dom';
+import { data, Link, useParams } from 'react-router-dom';
 import { ImageURL } from '../../components/ImageURL/ImageURL';
+import { MdEmojiTransportation } from "react-icons/md";
+import { FaLock } from "react-icons/fa";
 
 export const PropertyDetails = () => {
     const {id} = useParams();
@@ -52,10 +54,18 @@ export const PropertyDetails = () => {
                 </div>
 
                 <div className='property_body_right'>
-                    <h2>{property.price}</h2>
-                    <h4>{property.area_sqft}</h4>
-                    <button>Request Visit</button>
-                    <button>Unlock Contact</button>
+                    <div className='property_body_right_top'>
+                        <h2>BDT {property.price}</h2> 
+                        <h4>{property.area_sqft} sqft</h4>
+                        <h4>BDT {property.price / property.area_sqft} / sqft</h4>
+                        <hr />
+                        <div className='property_body_right_button'>
+                            <Link><MdEmojiTransportation className='property_icon'/> Request Visit</Link>
+                        </div>
+                        <div className='property_body_right_button'>
+                            <Link><FaLock className='property_icon'/>Unlock Contact</Link>
+                        </div>
+                    </div>
                 </div>
 
             </div>

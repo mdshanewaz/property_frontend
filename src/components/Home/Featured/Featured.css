@@ -6,6 +6,7 @@
 .container .feature_top, .container .featured_body {
     display: flex;
     width: 100%;
+    justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -33,7 +34,3 @@
     color: #fff;
     background: #001763;
 }
-/* 
-.container .featured_body {
-    
-} */

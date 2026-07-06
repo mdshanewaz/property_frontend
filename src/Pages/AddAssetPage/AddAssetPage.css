@@ -1,0 +1,45 @@
+.container_body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_body .add_asset_form_body {
+    width: 73%;
+    padding: 15px 0px 15px 10px ;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.container_body .aside_note {
+    width: 25%;
+    padding: 15px 10px 15px 10px ;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.container_body .aside_note hr {
+    margin: 15px 0px;
+    color: rgb(224, 224, 224);
+}
+
+.container_body .aside_note .aside_note_top {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container_body .aside_note .aside_note_top .aside_note_icon {
+    font-size: 2rem;
+}
+
+.container_body .aside_note .aside_note_top h2 {
+    font-size: 1rem;
+}
+
+.container_body .aside_note ul li, .container_body .aside_note p {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
