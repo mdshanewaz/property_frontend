@@ -5,6 +5,9 @@ import { TbBulb } from "react-icons/tb";
 import { MdOutlineSupportAgent } from "react-icons/md";
 
 export const AddAssetPage = () => {
+    
+    
+
     Title (" | Add Asset");
     
     return (
@@ -40,27 +43,28 @@ export const AddAssetPage = () => {
                         <input type="checkbox" name="" id="" placeholder="Is Furnished"/>
                         <input type="number" name="" id="" min="0" placeholder="Price"/>
                         <textarea name="" id="" placeholder="Description"></textarea>
+                        <input type="file" name="" id="" placeholder="Upload Video" accept="image/*"></input>
                         <input type="file" name="" id="" placeholder="Upload Video" accept="video/*"/>
                     </form>
                 </div>
                 <div className="aside_note">
-                    <div className="aside_note_top">
-                        <TbBulb className="aside_note_icon" /> <h2>How to post your property</h2>
+                    <div className="aside_note_inside">
+                        <div className="aside_note_top">
+                            <TbBulb className="aside_note_icon" /> <h2>How to post your property</h2>
+                        </div>
+                        <ul>
+                            <li>Give true and actual information</li>
+                            <li>Enter all the details</li>
+                            <li>Add property photo</li>
+                            <li>Submit and Wait for review</li>
+                        </ul>
+                        <hr />
+                        <div className="aside_note_top">
+                            <MdOutlineSupportAgent className="aside_note_icon" /> <h2>Need help?</h2>
+                        </div>
+                            <p>01888333222</p>
+                            <p>support@luxora.com</p> 
                     </div>
-                    <ul>
-                        <li>Give true and actual information</li>
-                        <li>Enter all the details</li>
-                        <li>Add property photo</li>
-                        <li>Submit and Wait for review</li>
-                    </ul>
-                    <hr />
-                    <div className="aside_note_top">
-                        <MdOutlineSupportAgent className="aside_note_icon" /> <h2>Need help?</h2>
-                    </div>
-                    <ul>
-                        <p>01888333222</p>
-                        <p>support@luxora.com</p> 
-                    </ul>
                 </div>
             </div>
         </div>

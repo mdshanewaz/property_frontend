@@ -9,13 +9,24 @@
     padding: 15px 0px 15px 10px ;
     border: 1px solid #eeeeee;
     border-radius: 5px;
+    display: flex;
+}
+
+.container_body .add_asset_form_body form input, .container_body .add_asset_form_body form textarea {
+    width: 95%;
+    outline: 1px solid #eeeeee;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .container_body .aside_note {
     width: 25%;
-    padding: 15px 10px 15px 10px ;
+}
+
+.container_body .aside_note .aside_note_inside {
     border: 1px solid #eeeeee;
     border-radius: 5px;
+    padding: 15px 10px 15px 10px ;
 }
 
 .container_body .aside_note hr {

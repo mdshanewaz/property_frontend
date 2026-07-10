@@ -28,6 +28,7 @@ import { ProfileAssetesPage } from './Pages/ProfileAssetesPage/ProfileAssetesPag
 import { ProfileRentsPage } from './Pages/ProfileRentsPage/ProfileRentsPage';
 import { ProfileInboxPage } from './Pages/ProfileInboxPage/ProfileInboxPage';
 import { AddAssetPage } from './Pages/AddAssetPage/AddAssetPage';
+import { Apartment } from './Pages/Apartment/Apartment';
 
 import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 import { PublicRoute } from './components/PublicRoute/PublicRoute';
@@ -42,10 +43,11 @@ function App() {
         {/* <Route path='/test' element={< Featured />} /> */}
 
         <Route path='/' element={< Home />} />
-        <Route path='/about' element={< About />} />
-        <Route path='/buy' element={< Buy />} />
+        {/* <Route path='/about' element={< About />} /> */}
+        {/* <Route path='/buy' element={< Buy />} />
         <Route path='/rent' element={< Rent />} />
-        <Route path='/sell' element={< Sell />} />
+        <Route path='/sell' element={< Sell />} /> */}
+        <Route path='/apartment' element={< Apartment />}/>
         <Route path='/developers' element={< Developers />} />
         <Route path='/contact' element={< Contact />} />
         <Route path='/services' element={< Services />} />

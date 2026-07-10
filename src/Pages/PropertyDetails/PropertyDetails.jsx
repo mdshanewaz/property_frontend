@@ -50,7 +50,7 @@ export const PropertyDetails = () => {
             <div className='property_body'>
 
                 <div className='property_body_left'>
-                    <img src={ImageURL (property.image)} alt="" />
+                    <img src={ImageURL (property.image1)} alt="" />
                 </div>
 
                 <div className='property_body_right'>

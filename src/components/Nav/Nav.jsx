@@ -35,10 +35,10 @@ export const Nav = () => {
                     <div>
                         <ul className={`navbar-menu ${menuOpen ? "active" : ""}`}>
                             <li>
-                                <NavLink to='/land' onClick={closeMenu}>Land</NavLink>
+                                <NavLink to='/apartment' onClick={closeMenu}>Apartment</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/apartment' onClick={closeMenu}>Apartment</NavLink>
+                                <NavLink to='/land' onClick={closeMenu}>Land</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/rent' onClick={closeMenu}>Rent</NavLink>
