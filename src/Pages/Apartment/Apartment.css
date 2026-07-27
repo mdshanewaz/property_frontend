@@ -1,0 +1,37 @@
+.apartment_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment_container .apartment_aside {
+    width: 22%;
+    margin-top: 20px;
+}
+
+.apartment_container .apartment_body {
+    width: 76%;
+}
+
+.apartment_container .apartment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment_container .apartment_form_container {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.apartment_container .apartment_form_container input, .apartment_container .apartment_form_container button, .apartment_container .apartment_form_container select {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.apartment_container .apartment_form_container select option {
+    outline: none;
+}

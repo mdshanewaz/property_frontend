@@ -12,7 +12,7 @@
     display: flex;
 }
 
-.container_body .add_asset_form_body form input, .container_body .add_asset_form_body form textarea {
+.container_body .add_asset_form_body form input, .container_body .add_asset_form_body form textarea, .container_body .add_asset_form_body form select {
     width: 95%;
     outline: 1px solid #eeeeee;
     padding: 10px;

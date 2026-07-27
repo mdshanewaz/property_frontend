@@ -38,6 +38,9 @@ export const Nav = () => {
                                 <NavLink to='/apartment' onClick={closeMenu}>Apartment</NavLink>
                             </li>
                             <li>
+                                <NavLink to='/commercial' onClick={closeMenu}>Commercial Space</NavLink>
+                            </li>
+                            <li>
                                 <NavLink to='/land' onClick={closeMenu}>Land</NavLink>
                             </li>
                             <li>

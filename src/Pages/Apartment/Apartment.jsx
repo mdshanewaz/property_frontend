@@ -33,20 +33,36 @@ export const Apartment = () => {
         <br />
         <br />
         <section className='container'>
-            <div>
+            <div className='apartment_container'>
                 <div className='apartment_aside'>
-                    <div></div>
+                    <div className='apartment_form_container'>
+                        <form action="">
+                            <select name="" id="">
+                                <option value="">Division</option>
+                                <option value="">Exmp Div 1</option>
+                                <option value="">Exmp Div 2</option>
+                            </select>
+
+                            <select name="" id="">
+                                <option value="">District</option>
+                                <option value="">Exmp Dist 1</option>
+                                <option value="">Exmp Dist 2</option>
+                            </select>
+
+                            <input type="number" id="" name="minPrice" placeholder="Minimum Price" />
+                            <input type="number" placeholder="Max Price" />
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
                 <div className='apartment_body'>
-                    <div>
-                        <div className="featured_body">
-                            {properties.map((property) => ( 
-                                <Properties 
-                                    key = {property.id} 
-                                    property = {property}
-                                />
-                            ))}
-                        </div>
+                    <div className='apartment'>
+                        {properties.map((property) => ( 
+                            <Properties 
+                                key = {property.id} 
+                                property = {property}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
