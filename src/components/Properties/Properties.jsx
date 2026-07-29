@@ -17,7 +17,7 @@ export const Properties = ({property}) => {
                 <p>
                     {`${property.master_bedrooms + property.common_bedrooms} Beds | `}
                     {`${property.wash_rooms} Baths | `}
-                    {property.area_sqft} sq.ft | {property.division} | {property.district}
+                    {property.area_sqft} sq.ft | {property.division_name} | {property.district_name}
                 </p>
             </div>
             </div>
