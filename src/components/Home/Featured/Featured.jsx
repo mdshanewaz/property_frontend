@@ -12,7 +12,7 @@ export const Featured = () => {
         const fetchProperties = async () => {
             try {
                 const response = await Api.get("apartment/flat/");
-                console.log(response.data.data);
+                // console.log(response.data.data);
                 setProperties(response.data.data);
             }
 

@@ -5,8 +5,24 @@ import { data, Link, useParams } from 'react-router-dom';
 import { ImageURL } from '../../components/ImageURL/ImageURL';
 import { MdEmojiTransportation } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
+import { useAuthContext } from '../../context/Auth/AuthProvider';
 
 export const PropertyDetails = () => {
+    const [user, setUser] = useState();
+    const {authenticated} = useAuthContext();
+    
+    const getUser = async ()=> {
+        if(authenticated) {
+        const response = await Api.get("user/profile/", {
+            withCredentials: true,
+        });
+        setUser(response.data.owner)
+    } 
+    }
+
+    getUser();
+    console.log(user)
+
     const {id} = useParams();
     const [property, setPropersty] = useState(null);
 
@@ -19,7 +35,7 @@ export const PropertyDetails = () => {
                     }
                 );
                 setPropersty(response.data.data)
-                console.log(response)
+                // console.log(response)
             }
             catch(error) {
                 console.error(error)
@@ -32,6 +48,8 @@ export const PropertyDetails = () => {
     if (!property) {
         return <h2>Loading...</h2>;
     }
+
+//    console.log(property.owner_id)
     
   return (
     <>
@@ -43,8 +61,16 @@ export const PropertyDetails = () => {
         <div className='container'>
 
             <div className='property_title'>
-                <h2>{property.building_name}</h2>
-                <h4>ID : </h4>
+                <div>
+                    <h2>{property.building_name}</h2>
+                    <h4>ID : {property.id} </h4>
+                </div>
+                {user === property.owner_id && (
+                <div>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                )}
             </div>
 
             <div className='property_body'>

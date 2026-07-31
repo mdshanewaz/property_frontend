@@ -7,6 +7,7 @@ import { Signout } from "../../components/Logout/LogoutBody/LogoutBody";
 const AuthContext = createContext(null);
 
 export const AuthContextProvider = ({ children }) => {
+
     const [authenticated, setIsAuthenticated] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const location = useLocation();
@@ -18,6 +19,7 @@ export const AuthContextProvider = ({ children }) => {
             // console.log("Authentication result:", success);
             setIsAuthenticated(success);
             // console.log('Authenticated state',authenticated);
+
         } 
         catch(error){
             // console.log(error);

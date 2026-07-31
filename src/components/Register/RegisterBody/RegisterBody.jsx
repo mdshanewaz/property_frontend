@@ -4,6 +4,7 @@ import Api from '../../../api/Api';
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { RxAvatar } from "react-icons/rx";
+import { ShowPopUp } from '../../ShowPopUp/ShowPopUp';
 
 export const RegisterBody = () => {
     const navigate = useNavigate();
@@ -91,12 +92,15 @@ export const RegisterBody = () => {
                             <p>By signing up, you agree to our Terms of Service and Privacy Policy.</p>
                             <button type='submit'>Register</button>
                         </form>
-                        {showPopup.show &&(
-                            <div className='pop-up'>
-                                <h2>{showPopup.message}</h2>
-                                <button className='close_button' onClick={() => setPopup({...showPopup, show:false})}> Close</button> 
-                            </div>
-                        )}
+                            
+                        <ShowPopUp 
+                            show={showPopup.show}
+                            message={showPopup.message}
+                            onClose={() => {
+                                setPopup({
+                                ...showPopup,
+                            show:false,
+                        })}} />
                     </div>
                     <div className='login_account'>
                         <p>Already have an account? <Link to='/login'>Login</Link></p> 

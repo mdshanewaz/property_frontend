@@ -5,6 +5,7 @@ import Api from '../../../api/Api';
 import { useNavigate, Link } from 'react-router-dom';
 import { RxAvatar } from "react-icons/rx";
 import { useAuthContext } from '../../../context/Auth/AuthProvider';
+import { ShowPopUp } from '../../ShowPopUp/ShowPopUp';
 
 export const LoginBody = () => {
     const navigate = useNavigate();
@@ -76,16 +77,16 @@ export const LoginBody = () => {
                             <input placeholder='Password' value={password} type='password' onChange={(e) => setPassword(e.target.value)} />
                             <button type='submit'>Login</button>
                         </form>
-                        {showPopup.show &&(
-                            <div className='pop-up'>
-                                <h2>{showPopup.message}</h2>
-                                <button className='close_button' onClick={() => setPopup({...showPopup, show:false})}> Close</button> 
-                            </div>
-                        )}
-                    </div>
-                    <div className='login_account'>
-                        <p>New to Luxora Estate? <Link to='/register'>Sign Up</Link></p>
-                        <p>Fogot Password? <Link to='/email'>Reset Password</Link></p>  
+                        <ShowPopUp 
+                            show={showPopup.show}
+                            message={showPopup.message}
+                            onClose={() => {
+                            setPopup({
+                                ...showPopup,
+                                show:false,
+                            })
+                        }}
+                    />
                     </div>
                 </div>
             </div>
